@@ -21,8 +21,16 @@
                 templateUrl : 'views/Home.html',
                 controller  : 'HomeController'
             })
-	    .when("/addjob",{
-			templateUrl:   "views/jobform.html",
-			controller:    "JobController"
-		})
+            .when('/savejob',{
+        		templateUrl:'views/jobform.html',
+        		controller:'JobController'
+        	})
+        	
+        	
+        	.when('/getalljobs',{
+        		templateUrl:'views/jobtitle.html',
+        		controller:'JobController'
+            })
+            
+            
     });

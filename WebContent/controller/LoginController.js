@@ -1,6 +1,4 @@
-/**
- * 
- */
+
  app.controller('LoginController', LoginController);
 
     LoginController.$inject = ['$location',  'AuthenticationService','$rootScope'];

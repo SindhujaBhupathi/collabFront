@@ -1,4 +1,33 @@
-<div class="row vertical-offset-20">
+
+<div>
+Search By Title<input ng-model="searchText.title">
+Search By Author<input ng-model="searchText.author">
+<!-- Search <input ng-model="jobTitle"> -->
+<table class="table">
+<thead>
+<tr>
+<th>Job Title</th><th>Posted on</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="job in jobs | filter:searchText">
+<td><a href="" ng-click="getJobDetail(job.id)">{{job.jobTitle}}</a></td><td>{{job.postedOn | date:'yyyy:MM;dd'}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div ng-show="showdetails">
+<b>Job Details</b>
+<b>Job title : </b>{{job.jobTitle}}<br>
+<b>Job Description :</b> {{job.jobDescription}}<br>
+<b>Skills Required :</b> {{job.skillsRequired}}<br>
+<b>Years of Experience :</b> {{job.YrsOfExp}}<br>
+<b>Location :</b> {{job.location}}<br>
+<b>Salary :</b> {{job.salary}}<br>
+<b>company Name :</b> {{job.companyName}}<br>
+</div>
+
+<!-- <div class="row vertical-offset-20">
 		<div class="col-md-6 col-md-offset-3">
 		
 		<div class="panel panel-default">
@@ -14,7 +43,7 @@
 						<tr>
 							<th>Job Title</th>
 							<th>Job Description</th>
-							<th>Job Posted On</th>
+							<th>Job Posted Ona</th>
 							
 						</tr>
 					</thead>
@@ -43,4 +72,4 @@
 			</div>
 		</div>
 </div>
-</div>
+</div> -->
