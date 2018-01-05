@@ -18,7 +18,10 @@
 	<script src="service/JobService.js"></script>
 	<script src="controller/JobController.js"></script>
 	<script src="controller/LoginController.js"></script>
-  
+	<!-- <script src="service/blogService.js"></script>
+	<script src="controller/blogController.js"></script>
+	<script src="controller/blogDetailsController.js"></script>
+   -->
 </head>
 
 <body data-ng-app="myApp">
@@ -38,11 +41,15 @@
  <li><a href="#/register" ng-hide="currentUser.firstName">Register</a></li>
  <li><a href="#/login" ng-hide="currentUser.firstName">login</a></li>
 <li><a href=""   ng-show="currentUser.firstName">Welcome {{currentUser.firstName}} &nbsp; {{currentUser.lastName}}</a></li>
- <li><a href="#/savejob" ng-show="currentUser.role=='Admin'">Job</a><li>
- <li><a href="#/getalljobs" ng-show="currentUser.firstName">AllJobs</a></li>
+ <li><a href="#/savejob" ng-show="currentUser.role=='Admin'">Save Job Details</a><li>
+ <li><a href="#/getalljobs" ng-show="currentUser.firstName">GetAllJobs</a></li>
 
+ 
+ </li>
+			       
 
- <li><a href="" ng-click="logout()" ng-show="currentUser.firstName" ng-controller='UserController'>logout</a></li>
+ <li><a href="" ng-click="logout()" ng-show="currentUser.firstName">logout</a></li>
+ <!--  <li><a href="#Blog">Blog</a></li> -->
  </ul>
             </div>
             </div>

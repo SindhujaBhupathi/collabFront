@@ -1,5 +1,4 @@
-
- app.controller('LoginController', LoginController);
+app.controller('LoginController', LoginController);
 
     LoginController.$inject = ['$location',  'AuthenticationService','$rootScope'];
  
