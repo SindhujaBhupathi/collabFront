@@ -1,5 +1,3 @@
-
-
 app.factory('JobService',function($http){
 	var jobService={}
 	jobService.createJob=function(job)
@@ -19,4 +17,3 @@ app.factory('JobService',function($http){
 	
 	return jobService;
 })
-

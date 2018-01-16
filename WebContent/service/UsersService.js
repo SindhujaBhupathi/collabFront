@@ -22,6 +22,14 @@ userService.logout=function(user){
 
 }
 
+userService.getUserByUsername=function(){
+    return $http.get(BASSE_URL +"/getuserdetails")
+}
+
+userService.updateUserProfile=function(user){
+return $http.put(BASSE_URL +"/updateprofile",user)
+}
+
+    
 return userService;
 })
-

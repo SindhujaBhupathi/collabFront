@@ -1,12 +1,12 @@
-app.factory('blogService',function($http){
+app.factory('BlogService',function($http){
 	var blogService={}
-	var BASE_URL="http://localhost:8888/backend2"
+	var BASE_URL="http://localhost:8081/collabBack"
 	blogService.saveBlog=function(blog){
 		return $http.post(BASE_URL + "/saveblog",blog)
 	}
 	//select * from blogpost where approved=1
 	blogService.getBlogsApproved=function(){
-		return $http.get(BASE_URL + "/getblogs/"+1)
+		return $http.get(BASE_URL +"/getblogs/"+1)
 	}
 	
 	//select * from blogpost where approved=0

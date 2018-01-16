@@ -1,4 +1,3 @@
-
 <div>
 Search By Title<input ng-model="searchText.title">
 Search By Author<input ng-model="searchText.author">
@@ -26,50 +25,14 @@ Search By Author<input ng-model="searchText.author">
 <b>Salary :</b> {{job.salary}}<br>
 <b>company Name :</b> {{job.companyName}}<br>
 </div>
-
-<!-- <div class="row vertical-offset-20">
-		<div class="col-md-6 col-md-offset-3">
-		
-		<div class="panel panel-default">
-			  	<div class="panel-heading">
-		  
-		  			<h3 class="panel-title"> All Jobs </h3>
-		        </div>
-			<div class="panel-body">
-			
-			
-			<table class="table-striped">
-					<thead>
-						<tr>
-							<th>Job Title</th>
-							<th>Job Description</th>
-							<th>Job Posted Ona</th>
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr data-ng-repeat="job in jobList">
-							<td><a href="" data-ng-click="getJob(job.id)">{{job.jobTitle}}</a></td>
-							<td>{{job.jobDesc}}</td>
-							<td>{{job.postedOn | date : "medium"}}</td>
-						</tr>
-					</tbody>
-			</table>
-			</div>
-			<div data-ng-hide="!job">
-			<h3>Job Detail </h3>
-					<pre>
-						<p>Job Title :  {{job.jobTitle}}</p>
-						<p>Job Description : {{job.jobDesc}}</p>
-						<p>Skills Required : {{job.skillsRequired}}</p>
-						<p>Location : {{job.location}}</p>		
-						<p>Company Name : {{job.companyName}}</p>
-						<p>Salary : {{job.salary}}</p>		
-						<p>Years Of Exp : {{job.yrsOfExp}}</p>		
-						<p>Posted On : {{job.postedOn}}</p>		
-					</pre>					
-			
-			</div>
-		</div>
-</div>
-</div> -->
+<style>
+ body {
+        background-color: #444;
+        background: url(https://acshub.co.uk/hubassets/uploads/2016/09/acs-website-background-building-e1472862899804.jpg);
+        
+        
+    }
+.vertical-offset-100{
+    padding-top:100px;
+}
+</style>
