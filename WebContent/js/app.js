@@ -65,6 +65,11 @@
 	        		controller : 'UserController'
 	        	})
 
+	        	 .when('/chat',{
+	        		 templateUrl:'views/chat.html',
+	        		 controller:'ChatCtrl'
+	        	 })
+	        	
             // route for the contact page
             .when('/Home', {
                 templateUrl : 'views/Home.html',
