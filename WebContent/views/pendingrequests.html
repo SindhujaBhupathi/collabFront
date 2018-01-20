@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
@@ -30,7 +30,7 @@ font-family:initial;
 <!--pendingRequests is List of Friends  -->
 <tr ng-repeat="pendingrequest in pendingRequests">
 <td><a ng-click="getUserDetails()">{{pendingrequest.fromId}}</a></td>
- <td><img  class="img-circle"  src="http://localhost:8081/collabBack/getimage/{{pendingrequest.fromId}}"  width="44" height="42" style="color:white;"></td>
+ <td><img  class="img-circle"  src="http://localhost:8888/backend2/getimage/{{pendingrequest.fromId}}"  width="44" height="42" style="color:white;"></td>
  <td><a class="btn btn-success" ng-click="updatePendingRequest(pendingrequest,'A')"><span class="glyphicon glyphicon-ok"></span>&nbsp;
 <!-- update friend set status 'A'  where id=?-->
 <span style="color:white;">Accept</a></span></td>
