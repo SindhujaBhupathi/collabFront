@@ -18,9 +18,8 @@ app.controller('BlogPostController',function($scope,BlogService,$location,$rootS
 		})
 	}
 	
-	//Two variables, blogsApproved, blogsWaitingForApproval
 	
-	//Statement to initialize variable blogsApproved 
+	
 	BlogService.getBlogsApproved().then(function(response){
 		$scope.blogsApproved=response.data//select * from blogpost where approved=1
 	},function(response){

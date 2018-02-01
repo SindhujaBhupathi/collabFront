@@ -3,7 +3,7 @@ app.controller('BlogPostDetailsController',function($scope,$location,$routeParam
 	$scope.isRejected=false;
 	$scope.showComment=false;
 	
-	//select * from blogpost_s180133 where id=?
+	
 	BlogService.getBlogPost(id).then(function(response){
 		$scope.blogPost=response.data
 	},function(response){
@@ -11,12 +11,12 @@ app.controller('BlogPostDetailsController',function($scope,$location,$routeParam
 			$location.path('/login')
 		}
 	})
-	//select * from blogpostlikes_s180133 where blogpost_id=? and user_username=?
+	
 	BlogService.userLikes(id).then(function(response){
-		if(response.data=='')//user has not yet liked the blogpost
+		if(response.data=='')
 			$scope.liked=false
 			else
-				$scope.liked=true//user has liked the blogpost already
+				$scope.liked=true
 			alert($scope.liked)
 	},function(response){
 		if(response.status==401){
