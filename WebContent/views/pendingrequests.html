@@ -31,12 +31,12 @@ font-family:initial;
 <tr ng-repeat="pendingrequest in pendingRequests">
 <td><a ng-click="getUserDetails()">{{pendingrequest.fromId}}</a></td>
  <td><img  class="img-circle"  src="http://localhost:8081/collabBack/getimage/{{pendingrequest.fromId}}"  width="44" height="42" style="color:white;"></td>
- <td><a class="btn btn-success" ng-click="updatePendingRequest(pendingrequest,'A')"><span class="glyphicon glyphicon-ok"></span>&nbsp;
+ <td><button class="btn btn-success" ng-click="updatePendingRequest(pendingrequest,'A')"><span class="glyphicon glyphicon-ok"></span>&nbsp;
 <!-- update friend set status 'A'  where id=?-->
-<span style="color:white;">Accept</a></span></td>
-<td><a class="btn btn-danger" ng-click="updatePendingRequest(pendingrequest,'R')"><span class="glyphicon glyphicon-remove"></span>&nbsp;
+<span style="color:white;">Accept</span></button></td>
+<td><button class="btn btn-danger" ng-click="updatePendingRequest(pendingrequest,'R')"><span class="glyphicon glyphicon-remove"></span>&nbsp;
 <!-- Delete friend set status 'R' where id=? -->
-<span style="color:white;"> Reject</a></span></td>
+<span style="color:white;"> Reject</span></button></td>
 </tr>
 </tbody>
 </table>

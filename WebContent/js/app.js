@@ -54,9 +54,6 @@
 	        		templateUrl:'views/friendslist.html',
 	        		controller:'FriendController'		
 	        	})
-	        	
-	        	
-	        		
 	        	.when('/profilepic', {
 	        		templateUrl : 'views/profilepic.html'
 	        	})
